@@ -6,14 +6,14 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class Todo1Application extends SpringBootServletInitializer {
+public class Todo1Application { //extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Todo1Application.class, args);
 	}
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(Todo1Application.class);
-	}
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return builder.sources(Todo1Application.class);
+//	}
 }
