@@ -238,7 +238,14 @@ public class TodoControllerMockTest {
         ResultActions actions = mockMvc.perform(delete("/todos/{todo-id}", todoId));
 
         // then
-        actions.andExpect(status().isNoContent());
+        actions.andExpect(status().isNoContent())
+                .andDo(document("delete-todo",
+                        preprocessRequest(prettyPrint()),
+                        preprocessResponse(prettyPrint()),
+                        pathParameters(
+                                parameterWithName("todo-id").description("회원 식별자")
+                        )
+                ));
     }
 
     @Test
@@ -253,6 +260,10 @@ public class TodoControllerMockTest {
         ResultActions actions = mockMvc.perform(delete("/todos"));
 
         // then
-        actions.andExpect(status().isNoContent());
+        actions.andExpect(status().isNoContent())
+                .andDo(document("delete-todos",
+                        preprocessRequest(prettyPrint()),
+                        preprocessResponse(prettyPrint())
+                ));
     }
 }
