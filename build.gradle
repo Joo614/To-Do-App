@@ -53,8 +53,7 @@ tasks.named('asciidoctor') {
 
 task copyDocument(type: Copy) {
 	dependsOn asciidoctor
-	println "asciidoctor output: ${asciidoctor.outputDir}"
-	from file("build/docs/asciidoc/")
+	from file("${asciidoctor.outputDir}")
 	into file("src/main/resources/static/docs")
 }
 
@@ -62,8 +61,8 @@ build {
 	dependsOn copyDocument
 }
 
+// (10)
 bootJar {
-	enabled = true
 	dependsOn copyDocument
 	from ("${asciidoctor.outputDir}") {
 		into 'static/docs'

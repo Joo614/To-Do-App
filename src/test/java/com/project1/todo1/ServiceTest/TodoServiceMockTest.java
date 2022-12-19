@@ -72,14 +72,14 @@ public class TodoServiceMockTest {
 
     @Test
     public void findTodosTest() {
-        // given
-        TodoEntity todo1 = new TodoEntity("sleeping",1,false);
-        todo1.setTodoId(1);
-        TodoEntity todo2 = new TodoEntity("studying",2,false);
-        todo2.setTodoId(2);
-        List<TodoEntity> todos = List.of(todo1, todo2);
-
-        given(todoRepository.findAll()).willReturn(todos);
+//        // given
+//        TodoEntity todo1 = new TodoEntity("sleeping",1,false);
+//        todo1.setTodoId(1);
+//        TodoEntity todo2 = new TodoEntity("studying",2,false);
+//        todo2.setTodoId(2);
+//        List<TodoEntity> todos = List.of(todo1, todo2);
+//
+//        given(todoRepository.findAll()).willReturn(todos);
 
 //        // when
 //        List<TodoEntity> responseTodo = todoService.findTodo(todos);
