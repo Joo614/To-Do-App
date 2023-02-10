@@ -6,7 +6,7 @@ Todo를 관리하기 위한 웹 애플리케이션입니다!
 
 | Backend |
 | :---: |
-|<img src="https://user-images.githubusercontent.com/110887604/210201950-01c6a53b-8042-4289-8d75-e7162211b715.jpg" width=150px alt="현주"/>|
+|<img src="https://user-images.githubusercontent.com/110887604/218117971-e329790d-4505-4433-b46b-72d3fd0787cd.jpg" width=150px alt="현주"/>|
 |[주현주](https://github.com/Joo614)|
 
 ## 💪 사용 스택
